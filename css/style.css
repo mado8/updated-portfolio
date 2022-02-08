@@ -29,6 +29,10 @@ body {
   border: 2px solid #fff;
 }
 
+.button-inline {
+  display: inline;
+}
+
 .link-button:hover {
   color: #c3a6a0;
   transition: 0.5s;
@@ -183,11 +187,21 @@ body {
 
 #portfolio {
   padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #fff;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
   min-height: 800px;
+}
+
+#project-section {
+  box-sizing: border-box;
+}
+
+.project:hover .overlay {
+  width: 100%;
+  left: 0;
 }
 
 .small-project {
@@ -198,14 +212,124 @@ body {
   width: 50%;
 }
 
+.wide-project {
+  width: 78%;
+}
+
 .project {
   display: inline-flex;
   height: 250px;
   margin: 20px;
   background-color: #e8d3c7;
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 3000px #a0908987 inset;
+}
+
+#image-1 {
+  background-image: url('../media/images/employee-tracker.png');
+}
+
+#image-2 {
+  background-image: url('../media/images/management-system.png');
+}
+
+#image-3 {
+  background-image: url('../media/images/ecommerce-backend.png');
+}
+
+#image-4 {
+  background-image: url('../media/images/game-go-app.png');
+}
+
+#image-5 {
+  background-image: url('../media/images/password-generator.png');
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #a15c38;
+  opacity: 85%;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.text a{
+  font-size: .6em;
 }
 
 /* ------------ contact section ------------ */
+
+#contact-me {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 100%;
+  text-align: center;
+  background-color: #857b74;
+}
+
+#contact-header {
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+#input-container {
+  display: flex;
+  justify-content: center;
+}
+
+#input-container label {
+  margin: 15px;
+}
+
+#input-container input,
+#input-container textarea {
+  padding-top: 10px;
+  padding-bottom: 10;
+  height: 40px;
+  width: 450px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+[type="text"]:focus {
+  color: #fff;
+  outline: none;
+}
+
+#input-container input::placeholder,
+#input-container textarea::placeholder {
+  color: #fff;
+}
+
+#input-container textarea {
+  margin-bottom: 25px;
+}
 
 /* ------------- resume -------------- */
 
@@ -264,6 +388,19 @@ body {
   #skill-icons,
   #icon-section {
     display: none;
+  }
+  
+  /* ------------------ responsive css --------------- */
+  
+  @media screen and (max-width: 768px) {
+    .small-project,
+    .large-project {
+      width: 80%;
+    }
+  
+    .project {
+      height: 200px;
+    }
   }
 
   @keyframes animate {
@@ -330,6 +467,10 @@ body {
     100% {
       transform: translateY(-1700px);
     }
+  }
+
+  .project {
+    height: 400px;
   }
 }
 

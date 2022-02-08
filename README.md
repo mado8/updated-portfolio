@@ -2,7 +2,7 @@
 My personal portfolio to showcase my work.
 
 ## Description
-
+This portfolio includes an about me section, previous projects, a resume, and a contact section to show employers my web development skills.
 
 ## Table of Contents
 

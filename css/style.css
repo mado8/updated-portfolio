@@ -112,4 +112,69 @@ body {
   box-shadow: #c3a6a0 30px 30px 0px 0px;
 }
 
+/* ------------ skills section ----------- */
 
+#skills {
+  margin-bottom: 100px;
+  height: 750px;
+  overflow: hidden;
+}
+
+#skills h3 {
+  text-align: center;
+  padding: 15px;
+  padding-left: 100%;
+  padding-bottom: 50px;
+}
+
+#skills img {
+  display: block;
+  padding: 10px;
+  margin-left: 70%;
+}
+
+#skill-icons {
+  display: flex;
+  justify-content: center;
+}
+
+#skill-card-section {
+  overflow: hidden;
+}
+
+#skill-section {
+  width: 100%;
+}
+
+#skill-card-section h4 {
+  font-size: 95%;
+}
+
+#skill-card-section li {
+  font-size: 85%;
+  list-style: none;
+}
+
+.carosel-horse {
+  background-image: url('../media/images/carosel-horse.png');
+}
+
+.skill-card {
+  min-width: 500px;
+  pointer-events: none;
+  padding: 50px;
+  z-index: -2;
+  margin: 60px;
+  margin-top: 0px;
+  border: none;
+  animation: animate 25s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-925px);
+  }
+}

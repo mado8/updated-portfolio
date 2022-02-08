@@ -1,0 +1,60 @@
+body {
+  background-color: #f9f6f5;
+  font-family: 'Abel', sans-serif;
+  color: #262220;
+}
+
+/* -------------- general css ------------ */
+
+#logo,
+.section-headers,
+#name-introduction,
+#logo p {
+  font-family: 'Viaoda Libre', cursive;
+  color: #a15c38;
+}
+
+/* .sub-containers {
+  min-height: 3000px;
+} */
+
+.link-button {
+  margin: 2px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #f9f6f5;
+  text-decoration: none;
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+.link-button:hover {
+  color: #c3a6a0;
+  transition: 0.5s;
+}
+
+/* -------------- nav section ------------- */
+
+#nav-container {
+  min-height: 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+
+#logo p {
+  font-size: 1.4em;
+}
+
+#nav-items a {
+  color: black;
+}
+
+#nav-items a:hover {
+  color: #c3a6a0;
+  transition: 0.4s;
+}
+
+

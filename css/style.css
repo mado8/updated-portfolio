@@ -178,3 +178,170 @@ body {
     transform: translateY(-925px);
   }
 }
+
+/* --------------- portfolio -------------- */
+
+#portfolio {
+  padding-top: 100px;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  min-height: 800px;
+}
+
+.small-project {
+  width: 25%;
+}
+
+.large-project {
+  width: 50%;
+}
+
+.project {
+  display: inline-flex;
+  height: 250px;
+  margin: 20px;
+  background-color: #e8d3c7;
+}
+
+/* ------------ contact section ------------ */
+
+/* ------------- resume -------------- */
+
+#resume-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* ------------ responsive css ----------- */
+
+@media screen and (max-width: 1180px) {
+  .skill-card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  *,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 105%;
+  }
+
+  .row {
+    width: fit-content;
+  }
+
+  #about-me {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-me h3 {
+    padding-top: 60px;
+  }
+
+  #about-text {
+    padding: 50px;
+    max-width: 60%;
+  }
+
+  #skill-section {
+    padding-top: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #skill-section h3,
+  #skill-section img,
+  #skill-icons,
+  #icon-section {
+    display: none;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-1125px);
+    }
+  }
+
+  .small-project {
+    width: 80%;
+  }
+
+  .large-project {
+    width: 80%;
+  }
+
+  .project {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #nav-items a {
+    display: none;
+  }
+
+  #self-image {
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 100px 100px 100px 100px;
+    box-shadow: none;
+  }
+
+  .row {
+    width: fit-content;
+  }
+
+  #about-text {
+    max-width: 100%;
+  }
+
+  #skill-section h3,
+  #skill-section img {
+    display: none;
+  }
+
+  #skills {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skill-card h4 {
+    padding: 10px;
+    font-size: 1.6em;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-1700px);
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  *,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 110%;
+  }
+
+  
+}

@@ -57,4 +57,23 @@ body {
   transition: 0.4s;
 }
 
+/* -------------- intro section ------------- */
+
+#name-section,
+#intro-buttons,
+#name-section p {
+  display: flex;
+  justify-content: center;
+}
+
+#intro {
+  padding-top: 250px;
+  padding-bottom: 300px;
+}
+
+#name-section p {
+  padding-left: 10px;
+}
+
+
 
